@@ -13,6 +13,7 @@ Type
       fm:extended;
       Output : TBGRABitmap;
       index : Integer;
+      pointer : ^TBGRABitmap;
     private
       fStatusText : string;
       procedure ShowStatus;
@@ -59,7 +60,7 @@ constructor TMyThread.Create(CreateSuspended : boolean);
         if (index = 1) then
         begin
              BGRABicubicPolyrama1(Input, fm, Output);
-        end;
+        end
         else
         begin
              BGRABicubicPolyrama2(Input, fm, Output);

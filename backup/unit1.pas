@@ -147,7 +147,7 @@ var
   	viewRect : TRect;
   	fm : Real;
 begin
-    fm := 5;
+    fm := 10;
  {   image2 := TBGRABitmap.Create(Image.Width, Image.Height);
     stretched := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
     viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
@@ -155,6 +155,8 @@ begin
     //BGRABicubicPolyrama1(image2, fm, stretched);
     //BGRABicubicPolyrama2(image2, fm, stretched);
     BGRABicubicPolyrama(image2, fm, stretched);    }
+
+    //customWidth := Round(Image.Width * fm) div 2;
 
     MyThread.Input := TBGRABitmap.Create(Image.Width, Image.Height);
     MyThread.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
@@ -165,7 +167,8 @@ begin
     MyThread.OnTerminate := @OnThreadDone;
     MyThread.Start;
     MyThread2.Input := TBGRABitmap.Create(Image.Width, Image.Height);
-    MyThread2.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
+    MyThread2.pointer := @MyThread.Output;
+    //MyThread2.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
     viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
     MyThread2.Input.Canvas.CopyRect(viewRect, Image.Picture.Bitmap.Canvas, viewRect);
     MyThread2.fm := fm;
@@ -193,8 +196,9 @@ begin
        Image.Picture.Bitmap.Height := MyThread.Output.Height;//stretched.Height;
        Image.Height := MyThread.Output.Height;//stretched.Height;
        Image.Width := MyThread.Output.Width;
-       MyThread.Output.Draw(Image.Canvas, 0, 0, True);
-       MyThread2.Output.Draw(Image.Canvas, 0, 0, True);
+       //MyThread.Output.Draw(Image.Canvas, 0, 0, True);
+       //MyThread.Output.Draw(Image.Canvas, Image.Width div 2, 0, True);
+       Image.Picture.Assign(MyThread.Output.Bitmap);
        ScrollBox.HorzScrollBar.Position := 0;
        ScrollBox.VertScrollBar.Position := 0;
        MyThread.Input.free;

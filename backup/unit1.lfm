@@ -4,8 +4,9 @@ object Form1: TForm1
   Top = 139
   Width = 507
   Caption = 'Form1'
-  ClientHeight = 348
+  ClientHeight = 346
   ClientWidth = 507
+  DesignTimePPI = 106
   Menu = MainMenu
   OnCreate = FormCreate
   LCLVersion = '1.8.0.6'

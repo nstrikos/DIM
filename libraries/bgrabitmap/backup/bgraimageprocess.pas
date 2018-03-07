@@ -27,12 +27,14 @@ uses
 
      type ImageArray=array of array of single;
 
+     type BitmapPointer = ^TBGRABitmap;
+
      procedure BGRAPixelRepetition (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABilinear (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABicubic (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABicubicPolyrama (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
-     procedure BGRABicubicPolyrama1 (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
-     procedure BGRABicubicPolyrama2 (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
+     procedure BGRABicubicPolyrama1 (var Input : TBGRABitmap ; fm:extended; var Output : TBGRABitmap);
+     procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
      procedure BGRABicubicCatmullRom (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRAInvertColors(Input : TBGRABitmap);
      procedure BGRASetAlpha(Input : TBGRABitmap);
@@ -304,14 +306,16 @@ var
    ca : array of array of single;
    c1,c2,c3,c4,c5,c6,c7,c8:single;
    sum :single;
-   customWidth : integer;
+   customWidth : Integer;
 begin
-
-   SetLength(ca, Output.Width, 4);
 
    customWidth := Output.Width div 2;
 
-   for k := 0 to customWidth - 1 do    //We calculate the factors of the multiplication
+   SetLength(ca, Output.Width, 4);
+
+   //customWidth := Output.Width div 2;
+
+   for k := 0 to Output.Width - 1 do    //We calculate the factors of the multiplication
    begin                                //for each row. They remain the same, so we don't have to
       x:=(k/fm)+1;                       //calculate them again for each pixel
       j:=trunc(x);
@@ -401,7 +405,7 @@ begin
   Output.InvalidateBitmap; // changed by direct access
 end;
 
-procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : TBGRABitmap);
+procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
 var
    x,y : single;
    a,b : single;
@@ -412,15 +416,15 @@ var
    ca : array of array of single;
    c1,c2,c3,c4,c5,c6,c7,c8:single;
    sum :single;
-   customWidth : integer;
+   customWidth : Integer;
 begin
 
-   SetLength(ca, Output.Width, 4);
+   customWidth := Output^.Width div 2;
+   customWidth := Output^.Width - customWidth;
 
-   customWidth := Output.Width div 2;
-   customWidth := Output.Width - customWidth;
+   SetLength(ca, Output^.Width, 4);
 
-   for k := customWidth to Output.Width - 1 do    //We calculate the factors of the multiplication
+   for k := 0 to Output^.Width - 1 do    //We calculate the factors of the multiplication
    begin                                //for each row. They remain the same, so we don't have to
       x:=(k/fm)+1;                       //calculate them again for each pixel
       j:=trunc(x);
@@ -431,12 +435,12 @@ begin
       ca[k][3]:=poly3(2-a);
    end;
 
-  for l := 0 to Output.Height-1 do
+  for l := 0 to Output^.Height-1 do
   begin
     y:= l/fm;
     i:=trunc(y);
     b:=y-i;
-    pOutput:=Output.ScanLine[l];
+    pOutput:=Output^.ScanLine[l];
 
     //take care of border pixels
     if i>0 then p0 := Input.ScanLine[i-1]
@@ -455,7 +459,7 @@ begin
     c6:=poly3(b);
     c7:=poly3(1-b);
     c8:=poly3(2-b);
-    for k := customWidth to Output.Width-1 do
+    for k := customWidth to Output^.Width-1 do
     begin
       x:= k/fm;
       j:=trunc(x);
