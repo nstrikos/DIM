@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1511853268"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/media/arch/home/nick/temp/lib/x86_64-linux -Fi/media/arch/home/nick/temp/libraries/bgrabitmap -Fu/media/arch/home/nick/temp/libraries/bgrabitmap -Fu/usr/lib/lazarus/lcl/units/x86_64-linux/qt5 -Fu/usr/lib/lazarus/lcl/units/x86_64-linux -Fu/usr/lib/lazarus/components/lazutils/lib/x86_64-linux -Fu/usr/lib/lazarus/packager/units/x86_64-linux -Fu/media/arch/home/nick/temp/ -FU/media/arch/home/nick/temp/lib/x86_64-linux/ -dLCL -dLCLqt5 project1.lpr"/>
+</CONFIG>
