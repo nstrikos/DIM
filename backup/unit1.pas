@@ -51,6 +51,8 @@ type
     	startDragY : Integer;
         MyThread : TMyThread;
         MyThread2 : TMyThread;
+        MyThread3 : TMyThread;
+        MyThread4 : TMyThread;
         count : Integer;
         procedure OnThreadDone(ASender : TObject);
         //image2, stretched: TBGRABitmap;
@@ -75,6 +77,8 @@ begin
     mouseIsDown := false;
     MyThread := TMyThread.Create(True);
     MyThread2 := TMyThread.Create(True);
+    MyThread3 := TMyThread.Create(True);
+    MyThread4 := TMyThread.Create(True);
     count := 0;
 end;
 
@@ -147,7 +151,7 @@ var
   	viewRect : TRect;
   	fm : Real;
 begin
-    fm := 10;
+    fm := 20;
  {   image2 := TBGRABitmap.Create(Image.Width, Image.Height);
     stretched := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
     viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
@@ -166,6 +170,7 @@ begin
     MyThread.index:=1;
     MyThread.OnTerminate := @OnThreadDone;
     MyThread.Start;
+
     MyThread2.Input := TBGRABitmap.Create(Image.Width, Image.Height);
     MyThread2.pointer := @MyThread.Output;
     //MyThread2.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
@@ -175,6 +180,26 @@ begin
     MyThread2.index:=2;
     MyThread2.OnTerminate := @OnThreadDone;
     MyThread2.Start;
+
+    MyThread3.Input := TBGRABitmap.Create(Image.Width, Image.Height);
+    MyThread3.pointer := @MyThread.Output;
+    //MyThread2.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
+    viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
+    MyThread3.Input.Canvas.CopyRect(viewRect, Image.Picture.Bitmap.Canvas, viewRect);
+    MyThread3.fm := fm;
+    MyThread3.index:=3;
+    MyThread3.OnTerminate := @OnThreadDone;
+    MyThread3.Start;
+
+        MyThread4.Input := TBGRABitmap.Create(Image.Width, Image.Height);
+    MyThread4.pointer := @MyThread.Output;
+    //MyThread2.Output := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
+    viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
+    MyThread4.Input.Canvas.CopyRect(viewRect, Image.Picture.Bitmap.Canvas, viewRect);
+    MyThread4.fm := fm;
+    MyThread4.index:=4;
+    MyThread4.OnTerminate := @OnThreadDone;
+    MyThread4.Start;
   {  Image.Picture.Bitmap.Width := stretched.Width;
     Image.Picture.Bitmap.Height := stretched.Height;
     Image.Height := stretched.Height;
@@ -189,16 +214,16 @@ end;
 procedure TForm1.OnThreadDone(ASender : TObject);
 begin
   count := count + 1;
-  if (count = 2) then
+  if (count = 4) then
   begin
        Form1.Caption := 'Done!';
        Image.Picture.Bitmap.Width := MyThread.Output.Width;//stretched.Width;
        Image.Picture.Bitmap.Height := MyThread.Output.Height;//stretched.Height;
        Image.Height := MyThread.Output.Height;//stretched.Height;
        Image.Width := MyThread.Output.Width;
-       //MyThread.Output.Draw(Image.Canvas, 0, 0, True);
+       MyThread.Output.Draw(Image.Canvas, 0, 0, True);
        //MyThread.Output.Draw(Image.Canvas, Image.Width div 2, 0, True);
-       Image.Picture.Assign(MyThread.Output.Bitmap);
+       //Image.Picture.Assign(MyThread.Output.Bitmap);
        ScrollBox.HorzScrollBar.Position := 0;
        ScrollBox.VertScrollBar.Position := 0;
        MyThread.Input.free;

@@ -1,0 +1,101 @@
+object Form1: TForm1
+  Left = 217
+  Height = 379
+  Top = 139
+  Width = 507
+  Caption = 'Form1'
+  ClientHeight = 354
+  ClientWidth = 507
+  DesignTimePPI = 120
+  Menu = MainMenu
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object ScrollBox: TScrollBox
+    Left = 128
+    Height = 150
+    Top = 155
+    Width = 150
+    HorzScrollBar.Page = 90
+    HorzScrollBar.Tracking = True
+    VertScrollBar.Page = 90
+    VertScrollBar.Tracking = True
+    ClientHeight = 146
+    ClientWidth = 146
+    Color = clGray
+    ParentColor = False
+    TabOrder = 0
+    object Image: TImage
+      Left = 0
+      Height = 90
+      Top = 0
+      Width = 90
+      OnMouseDown = ImageMouseDown
+      OnMouseMove = ImageMouseMove
+      OnMouseUp = ImageMouseUp
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    left = 200
+    top = 16
+  end
+  object MainMenu: TMainMenu
+    left = 30
+    top = 55
+    object FileMItem: TMenuItem
+      Caption = 'File'
+      object OpenMItem: TMenuItem
+        Caption = 'Open'
+        OnClick = OpenMItemClick
+      end
+      object SaveMItem: TMenuItem
+        Caption = 'Save'
+        OnClick = SaveMItemClick
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Quit'
+        OnClick = MenuItem3Click
+      end
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Edit'
+      object MenuItem5: TMenuItem
+        Caption = 'Copy'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Cut'
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Paste'
+      end
+      object TestMItem: TMenuItem
+        Caption = 'Test'
+        OnClick = TestMItemClick
+      end
+    end
+    object MenuItem10: TMenuItem
+      Caption = 'View'
+      object MenuItem11: TMenuItem
+        Caption = 'Select magnfying factor'
+        object MenuItem12: TMenuItem
+          Caption = '200'
+        end
+        object MenuItem13: TMenuItem
+          Caption = '300'
+        end
+        object MenuItem14: TMenuItem
+          Caption = '400'
+        end
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Help'
+      object MenuItem9: TMenuItem
+        Caption = 'About'
+      end
+    end
+  end
+  object SavePictureDialog: TSavePictureDialog
+    left = 341
+    top = 68
+  end
+end

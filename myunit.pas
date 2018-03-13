@@ -61,10 +61,19 @@ constructor TMyThread.Create(CreateSuspended : boolean);
         begin
              BGRABicubicPolyrama1(Input, fm, Output);
         end
-        else
+        else if (index = 2) then
         begin
              BGRABicubicPolyrama2(Input, fm, pointer);
         end
+        else if (index = 3) then
+        begin
+             BGRABicubicPolyrama3(Input, fm, pointer);
+        end
+        else
+        begin
+             BGRABicubicPolyrama4(Input, fm, pointer);
+        end;
+
 
     //    if NewStatus <> fStatusText then
     //      begin

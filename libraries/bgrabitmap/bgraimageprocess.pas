@@ -35,6 +35,8 @@ uses
      procedure BGRABicubicPolyrama (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABicubicPolyrama1 (var Input : TBGRABitmap ; fm:extended; var Output : TBGRABitmap);
      procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+     procedure BGRABicubicPolyrama3 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+     procedure BGRABicubicPolyrama4 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
      procedure BGRABicubicCatmullRom (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRAInvertColors(Input : TBGRABitmap);
      procedure BGRASetAlpha(Input : TBGRABitmap);
@@ -309,7 +311,7 @@ var
    customWidth : Integer;
 begin
 
-   customWidth := Output.Width div 2;
+   customWidth := Output.Width div 4;
 
    SetLength(ca, Output.Width, 4);
 
@@ -416,11 +418,12 @@ var
    ca : array of array of single;
    c1,c2,c3,c4,c5,c6,c7,c8:single;
    sum :single;
-   customWidth : Integer;
+   startP, endP, customWidth : Integer;
 begin
 
-   customWidth := Output^.Width div 2;
-   customWidth := Output^.Width - customWidth;
+   customWidth := Output^.Width div 4;
+   startP := customWidth;
+   endP := Output^.Width div 2;
 
    SetLength(ca, Output^.Width, 4);
 
@@ -459,7 +462,227 @@ begin
     c6:=poly3(b);
     c7:=poly3(1-b);
     c8:=poly3(2-b);
-    for k := customWidth to Output^.Width-1 do
+    for k := startP to endP-1 do
+    begin
+      x:= k/fm;
+      j:=trunc(x);
+      c1:=ca[k][0];
+      c2:=ca[k][1];
+      c3:=ca[k][2];
+      c4:=ca[k][3];
+
+      //take care of border pixels
+      if j>0 then j1:=j-1
+      else j1:=0;
+
+      if j<Input.Width-1 then j3:=j+1
+      else j3:=Input.Width-1;
+
+      if j<Input.Width-2 then j4:=j+2
+      else j4:=Input.Width-1;
+
+      Sum :=  Round(c5*(p0[j1].red*c1 + p0[j].red*c2 + p0[j3].red*c3 + p0[j4].red*c4)
+                  + c6*(p1[j1].red*c1 + p1[j].red*c2 + p1[j3].red*c3 + p1[j4].red*c4)
+                  + c7*(p2[j1].red*c1 + p2[j].red*c2 + p2[j3].red*c3 + p2[j4].red*c4)
+                  + c8*(p3[j1].red*c1 + p3[j].red*c2 + p3[j3].red*c3 + p3[j4].red*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].red:= Round(sum);
+
+      sum := Round(c5*(p0[j].green*c1 + p0[j].green*c2 + p0[j3].green*c3 + p0[j4].green*c4)
+                 + c6*(p1[j].green*c1 + p1[j].green*c2 + p1[j3].green*c3 + p1[j4].green*c4)
+                 + c7*(p2[j].green*c1 + p2[j].green*c2 + p2[j3].green*c3 + p2[j4].green*c4)
+                 + c8*(p3[j].green*c1 + p3[j].green*c2 + p3[j3].green*c3 + p3[j4].green*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].green:= Round(sum);
+
+      sum := Round(c5*(p0[j].blue*c1 + p0[j].blue*c2 + p0[j3].blue*c3 + p0[j4].blue*c4)
+                 + c6*(p1[j].blue*c1 + p1[j].blue*c2 + p1[j3].blue*c3 + p1[j4].blue*c4)
+                 + c7*(p2[j].blue*c1 + p2[j].blue*c2 + p2[j3].blue*c3 + p2[j4].blue*c4)
+                 + c8*(p3[j].blue*c1 + p3[j].blue*c2 + p3[j3].blue*c3 + p3[j4].blue*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].blue:= Round(sum);
+
+      pOutput[k].alpha:=255;
+    end;
+  end;
+  Output^.InvalidateBitmap; // changed by direct access
+end;
+
+procedure BGRABicubicPolyrama3 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+var
+   x,y : single;
+   a,b : single;
+   i,j : int64;
+   k,l : integer;
+   j1, j3, j4 : integer;
+   p0, p1, p2, p3, pOutput : PBGRAPixel;
+   ca : array of array of single;
+   c1,c2,c3,c4,c5,c6,c7,c8:single;
+   sum :single;
+   startP, endP, customWidth : Integer;
+begin
+
+   customWidth := Output^.Width div 4;
+   startP := Output^.Width div 2;
+   endP := startP + customWidth;
+
+   SetLength(ca, Output^.Width, 4);
+
+   for k := 0 to Output^.Width - 1 do    //We calculate the factors of the multiplication
+   begin                                //for each row. They remain the same, so we don't have to
+      x:=(k/fm)+1;                       //calculate them again for each pixel
+      j:=trunc(x);
+      a:=x-j;
+      ca[k][0]:=poly3(1+a);
+      ca[k][1]:=poly3(a);
+      ca[k][2]:=poly3(1-a);
+      ca[k][3]:=poly3(2-a);
+   end;
+
+  for l := 0 to Output^.Height-1 do
+  begin
+    y:= l/fm;
+    i:=trunc(y);
+    b:=y-i;
+    pOutput:=Output^.ScanLine[l];
+
+    //take care of border pixels
+    if i>0 then p0 := Input.ScanLine[i-1]
+    else p0 := Input.ScanLine[0];
+
+    p1 := Input.ScanLine[i];
+
+    if i<Input.Height-1 then p2 := Input.ScanLine[i+1]
+    else p2 := Input.ScanLine[Input.Height-1];
+
+    if i<Input.Height-2 then p3 := Input.ScanLine[i+2]
+    else p3 := Input.ScanLine[Input.Height-1];
+
+    //calculate factors
+    c5:=poly3(1+b);
+    c6:=poly3(b);
+    c7:=poly3(1-b);
+    c8:=poly3(2-b);
+    for k := startP to endP-1 do
+    begin
+      x:= k/fm;
+      j:=trunc(x);
+      c1:=ca[k][0];
+      c2:=ca[k][1];
+      c3:=ca[k][2];
+      c4:=ca[k][3];
+
+      //take care of border pixels
+      if j>0 then j1:=j-1
+      else j1:=0;
+
+      if j<Input.Width-1 then j3:=j+1
+      else j3:=Input.Width-1;
+
+      if j<Input.Width-2 then j4:=j+2
+      else j4:=Input.Width-1;
+
+      Sum :=  Round(c5*(p0[j1].red*c1 + p0[j].red*c2 + p0[j3].red*c3 + p0[j4].red*c4)
+                  + c6*(p1[j1].red*c1 + p1[j].red*c2 + p1[j3].red*c3 + p1[j4].red*c4)
+                  + c7*(p2[j1].red*c1 + p2[j].red*c2 + p2[j3].red*c3 + p2[j4].red*c4)
+                  + c8*(p3[j1].red*c1 + p3[j].red*c2 + p3[j3].red*c3 + p3[j4].red*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].red:= Round(sum);
+
+      sum := Round(c5*(p0[j].green*c1 + p0[j].green*c2 + p0[j3].green*c3 + p0[j4].green*c4)
+                 + c6*(p1[j].green*c1 + p1[j].green*c2 + p1[j3].green*c3 + p1[j4].green*c4)
+                 + c7*(p2[j].green*c1 + p2[j].green*c2 + p2[j3].green*c3 + p2[j4].green*c4)
+                 + c8*(p3[j].green*c1 + p3[j].green*c2 + p3[j3].green*c3 + p3[j4].green*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].green:= Round(sum);
+
+      sum := Round(c5*(p0[j].blue*c1 + p0[j].blue*c2 + p0[j3].blue*c3 + p0[j4].blue*c4)
+                 + c6*(p1[j].blue*c1 + p1[j].blue*c2 + p1[j3].blue*c3 + p1[j4].blue*c4)
+                 + c7*(p2[j].blue*c1 + p2[j].blue*c2 + p2[j3].blue*c3 + p2[j4].blue*c4)
+                 + c8*(p3[j].blue*c1 + p3[j].blue*c2 + p3[j3].blue*c3 + p3[j4].blue*c4));
+
+      if sum > 255 then sum := 255;
+      if sum <0 then sum :=0;
+
+      pOutput[k].blue:= Round(sum);
+
+      pOutput[k].alpha:=255;
+    end;
+  end;
+  Output^.InvalidateBitmap; // changed by direct access
+end;
+
+procedure BGRABicubicPolyrama4 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+var
+   x,y : single;
+   a,b : single;
+   i,j : int64;
+   k,l : integer;
+   j1, j3, j4 : integer;
+   p0, p1, p2, p3, pOutput : PBGRAPixel;
+   ca : array of array of single;
+   c1,c2,c3,c4,c5,c6,c7,c8:single;
+   sum :single;
+   startP, endP, customWidth : Integer;
+begin
+
+   customWidth := Output^.Width div 4;
+   startP := 3 * customWidth;
+   endP := Output^.Width;
+
+   SetLength(ca, Output^.Width, 4);
+
+   for k := 0 to Output^.Width - 1 do    //We calculate the factors of the multiplication
+   begin                                //for each row. They remain the same, so we don't have to
+      x:=(k/fm)+1;                       //calculate them again for each pixel
+      j:=trunc(x);
+      a:=x-j;
+      ca[k][0]:=poly3(1+a);
+      ca[k][1]:=poly3(a);
+      ca[k][2]:=poly3(1-a);
+      ca[k][3]:=poly3(2-a);
+   end;
+
+  for l := 0 to Output^.Height-1 do
+  begin
+    y:= l/fm;
+    i:=trunc(y);
+    b:=y-i;
+    pOutput:=Output^.ScanLine[l];
+
+    //take care of border pixels
+    if i>0 then p0 := Input.ScanLine[i-1]
+    else p0 := Input.ScanLine[0];
+
+    p1 := Input.ScanLine[i];
+
+    if i<Input.Height-1 then p2 := Input.ScanLine[i+1]
+    else p2 := Input.ScanLine[Input.Height-1];
+
+    if i<Input.Height-2 then p3 := Input.ScanLine[i+2]
+    else p3 := Input.ScanLine[Input.Height-1];
+
+    //calculate factors
+    c5:=poly3(1+b);
+    c6:=poly3(b);
+    c7:=poly3(1-b);
+    c8:=poly3(2-b);
+    for k := startP to endP-1 do
     begin
       x:= k/fm;
       j:=trunc(x);
