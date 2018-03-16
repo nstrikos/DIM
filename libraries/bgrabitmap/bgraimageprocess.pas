@@ -34,7 +34,10 @@ uses
      procedure BGRABicubic (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABicubicPolyrama (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
      procedure BGRABicubicPolyrama1 (var Input : TBGRABitmap ; fm:extended; var Output : TBGRABitmap);
-     procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+     procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap;
+                                    fm:extended;
+                                    var Output : BitmapPointer;
+                                    first, final : Integer);
      procedure BGRABicubicPolyrama3 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
      procedure BGRABicubicPolyrama4 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
      procedure BGRABicubicCatmullRom (Input : TBGRABitmap ; fm:extended; Output : TBGRABitmap);
@@ -407,7 +410,10 @@ begin
   Output.InvalidateBitmap; // changed by direct access
 end;
 
-procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ; fm:extended; var Output : BitmapPointer);
+procedure BGRABicubicPolyrama2 (var Input : TBGRABitmap ;
+                               fm:extended;
+                               var Output : BitmapPointer;
+                               first, final : Integer);
 var
    x,y : single;
    a,b : single;
@@ -422,8 +428,12 @@ var
 begin
 
    customWidth := Output^.Width div 4;
-   startP := customWidth;
-   endP := Output^.Width div 2;
+   //startP := customWidth;
+   //endP := Output^.Width div 2;
+   startP := first;
+   endP := final;
+   //writeln(startP);
+   //writeln(endP);
 
    SetLength(ca, Output^.Width, 4);
 

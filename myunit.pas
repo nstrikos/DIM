@@ -14,6 +14,7 @@ Type
       Output : TBGRABitmap;
       index : Integer;
       pointer : ^TBGRABitmap;
+      width: Integer;
     private
       fStatusText : string;
       procedure ShowStatus;
@@ -63,15 +64,18 @@ constructor TMyThread.Create(CreateSuspended : boolean);
         end
         else if (index = 2) then
         begin
-             BGRABicubicPolyrama2(Input, fm, pointer);
+             width := width div 4;
+             BGRABicubicPolyrama2(Input, fm, pointer, width, 2 * width);
         end
         else if (index = 3) then
         begin
-             BGRABicubicPolyrama3(Input, fm, pointer);
+             width := width div 4;
+             BGRABicubicPolyrama2(Input, fm, pointer, 2 * width, 3 * width);
         end
         else
         begin
-             BGRABicubicPolyrama4(Input, fm, pointer);
+             width := width div 4;
+             BGRABicubicPolyrama2(Input, fm, pointer, 3 * width, 4 * width);
         end;
 
 

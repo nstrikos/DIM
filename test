@@ -1,0 +1,12 @@
+#!/bin/sh
+export LD_PRELOAD=./libQt5Network.so.5.10.0
+LD_PRELOAD=$LD_PRELOAD:./libQt5Pas.so.1.2.6
+LD_PRELOAD=$LD_PRELOAD:./libQt5Core.so.5.10.0
+LD_PRELOAD=$LD_PRELOAD:./libicui18n.so.56.1
+LD_PRELOAD=$LD_PRELOAD:./libicuuc.so.56.1
+LD_PRELOAD=$LD_PRELOAD:./libicudata.so.56.1
+LD_PRELOAD=$LD_PRELOAD:./libQt5X11Extras.so.5.10.0
+LD_PRELOAD=$LD_PRELOAD:./libQt5PrintSupport.so.5.10.0
+LD_PRELOAD=$LD_PRELOAD:./libQt5Widgets.so.5.10.0
+LD_PRELOAD=$LD_PRELOAD:./libQt5Gui.so.5.10.0
+./project1 

@@ -151,7 +151,7 @@ var
   	viewRect : TRect;
   	fm : Real;
 begin
-    fm := 6;
+    fm := 2;
  {   image2 := TBGRABitmap.Create(Image.Width, Image.Height);
     stretched := TBGRABitmap.Create( Round(Image.Width * fm), Round(Image.Height * fm) );
     viewRect := TRect.Create(0, 0, Image.Width, Image.Height);
@@ -169,6 +169,7 @@ begin
     MyThread.fm := fm;
     MyThread.index:=1;
     MyThread.OnTerminate := @OnThreadDone;
+    MyThread.width:=MyThread.Output.Width;
     MyThread.Start;
 
     MyThread2.Input := TBGRABitmap.Create(Image.Width, Image.Height);
@@ -179,6 +180,7 @@ begin
     MyThread2.fm := fm;
     MyThread2.index:=2;
     MyThread2.OnTerminate := @OnThreadDone;
+    MyThread2.width:=MyThread.Output.Width;
     MyThread2.Start;
 
     MyThread3.Input := TBGRABitmap.Create(Image.Width, Image.Height);
@@ -189,6 +191,7 @@ begin
     MyThread3.fm := fm;
     MyThread3.index:=3;
     MyThread3.OnTerminate := @OnThreadDone;
+    MyThread3.width:=MyThread.Output.Width;
     MyThread3.Start;
 
         MyThread4.Input := TBGRABitmap.Create(Image.Width, Image.Height);
@@ -199,6 +202,7 @@ begin
     MyThread4.fm := fm;
     MyThread4.index:=4;
     MyThread4.OnTerminate := @OnThreadDone;
+    MyThread4.width:=MyThread.Output.Width;
     MyThread4.Start;
   {  Image.Picture.Bitmap.Width := stretched.Width;
     Image.Picture.Bitmap.Height := stretched.Height;
@@ -221,9 +225,14 @@ begin
        Image.Picture.Bitmap.Height := MyThread.Output.Height;//stretched.Height;
        Image.Height := MyThread.Output.Height;//stretched.Height;
        Image.Width := MyThread.Output.Width;
+
+
+       {$IFDEF UNIX}
+       Image.Picture.Assign(MyThread.Output.Bitmap);
+       {$ELSE}
        MyThread.Output.Draw(Image.Canvas, 0, 0, True);
-       //MyThread.Output.Draw(Image.Canvas, Image.Width div 2, 0, True);
-       //Image.Picture.Assign(MyThread.Output.Bitmap);
+       {$ENDIF}
+
        ScrollBox.HorzScrollBar.Position := 0;
        ScrollBox.VertScrollBar.Position := 0;
        MyThread.Input.free;

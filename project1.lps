@@ -2,14 +2,13 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="10"/>
-    <BuildModes Active="Default"/>
+    <BuildModes Active="Release"/>
     <Units Count="146">
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="4" Y="16"/>
-        <UsageCount Value="29"/>
+        <CursorPos X="11" Y="8"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,12 +18,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="150"/>
-        <CursorPos X="12" Y="154"/>
-        <UsageCount Value="29"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="185"/>
+        <CursorPos X="14" Y="205"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="libraries/bgrabitmap/basiccolorspace.inc"/>
@@ -33,7 +31,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit2>
       <Unit3>
         <Filename Value="libraries/bgrabitmap/bglcontrols.lpk"/>
@@ -42,7 +40,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit3>
       <Unit4>
@@ -52,7 +50,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit4>
       <Unit5>
         <Filename Value="libraries/bgrabitmap/bglvirtualscreen_icon.lrs"/>
@@ -61,7 +59,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit5>
       <Unit6>
         <Filename Value="libraries/bgrabitmap/bglvirtualscreen.pas"/>
@@ -70,7 +68,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit6>
       <Unit7>
         <Filename Value="libraries/bgrabitmap/bgraanimatedgif.pas"/>
@@ -79,7 +77,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit7>
       <Unit8>
         <Filename Value="libraries/bgrabitmap/bgraarrow.pas"/>
@@ -88,7 +86,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit8>
       <Unit9>
         <Filename Value="libraries/bgrabitmap/bgrabitmap.inc"/>
@@ -97,7 +95,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit9>
       <Unit10>
         <Filename Value="libraries/bgrabitmap/bgrabitmap.pas"/>
@@ -106,7 +104,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit10>
       <Unit11>
         <Filename Value="libraries/bgrabitmap/bgrabitmappack.lpk"/>
@@ -115,7 +113,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit11>
       <Unit12>
@@ -125,7 +123,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit12>
       <Unit13>
         <Filename Value="libraries/bgrabitmap/bgrabitmappack4fpgui.lpk"/>
@@ -134,7 +132,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit13>
       <Unit14>
@@ -144,7 +142,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit14>
       <Unit15>
         <Filename Value="libraries/bgrabitmap/bgrabitmappack4nogui.lpk"/>
@@ -153,7 +151,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit15>
       <Unit16>
@@ -163,7 +161,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit16>
       <Unit17>
         <Filename Value="libraries/bgrabitmap/bgrabitmaptypes.pas"/>
@@ -172,7 +170,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit17>
       <Unit18>
         <Filename Value="libraries/bgrabitmap/bgrablend.pas"/>
@@ -181,7 +179,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit18>
       <Unit19>
         <Filename Value="libraries/bgrabitmap/bgrablurgl.pas"/>
@@ -190,7 +188,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit19>
       <Unit20>
         <Filename Value="libraries/bgrabitmap/bgracanvas.pas"/>
@@ -199,7 +197,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit20>
       <Unit21>
         <Filename Value="libraries/bgrabitmap/bgracanvas2d.pas"/>
@@ -208,7 +206,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit21>
       <Unit22>
         <Filename Value="libraries/bgrabitmap/bgracanvasgl.pas"/>
@@ -217,7 +215,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit22>
       <Unit23>
         <Filename Value="libraries/bgrabitmap/bgracolorint.pas"/>
@@ -226,7 +224,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit23>
       <Unit24>
         <Filename Value="libraries/bgrabitmap/bgracolorquantization.pas"/>
@@ -235,7 +233,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit24>
       <Unit25>
         <Filename Value="libraries/bgrabitmap/bgracolorspace.pas"/>
@@ -244,7 +242,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit25>
       <Unit26>
         <Filename Value="libraries/bgrabitmap/bgracompressablebitmap.pas"/>
@@ -253,7 +251,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit26>
       <Unit27>
         <Filename Value="libraries/bgrabitmap/bgracoordpool3d.pas"/>
@@ -262,7 +260,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit27>
       <Unit28>
         <Filename Value="libraries/bgrabitmap/bgracustombitmap.inc"/>
@@ -271,7 +269,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit28>
       <Unit29>
         <Filename Value="libraries/bgrabitmap/bgracustomtextfx.pas"/>
@@ -280,7 +278,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit29>
       <Unit30>
         <Filename Value="libraries/bgrabitmap/bgradefaultbitmap.pas"/>
@@ -289,7 +287,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit30>
       <Unit31>
         <Filename Value="libraries/bgrabitmap/bgradithering.pas"/>
@@ -298,7 +296,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit31>
       <Unit32>
         <Filename Value="libraries/bgrabitmap/bgradnetdeserial.pas"/>
@@ -307,7 +305,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit32>
       <Unit33>
         <Filename Value="libraries/bgrabitmap/bgrafillinfo.pas"/>
@@ -316,7 +314,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit33>
       <Unit34>
         <Filename Value="libraries/bgrabitmap/bgrafilterblur.pas"/>
@@ -325,7 +323,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit34>
       <Unit35>
         <Filename Value="libraries/bgrabitmap/bgrafilters.pas"/>
@@ -334,7 +332,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit35>
       <Unit36>
         <Filename Value="libraries/bgrabitmap/bgrafilterscanner.pas"/>
@@ -343,7 +341,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit36>
       <Unit37>
         <Filename Value="libraries/bgrabitmap/bgrafiltertype.pas"/>
@@ -352,7 +350,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit37>
       <Unit38>
         <Filename Value="libraries/bgrabitmap/bgrafontgl.pas"/>
@@ -361,7 +359,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit38>
       <Unit39>
         <Filename Value="libraries/bgrabitmap/bgrafpgui.inc"/>
@@ -370,7 +368,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit39>
       <Unit40>
         <Filename Value="libraries/bgrabitmap/bgrafpguibitmap.pas"/>
@@ -379,7 +377,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit40>
       <Unit41>
         <Filename Value="libraries/bgrabitmap/bgrafreetype.pas"/>
@@ -388,7 +386,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit41>
       <Unit42>
         <Filename Value="libraries/bgrabitmap/bgragifformat.pas"/>
@@ -397,7 +395,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit42>
       <Unit43>
         <Filename Value="libraries/bgrabitmap/bgragradients.pas"/>
@@ -406,7 +404,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit43>
       <Unit44>
         <Filename Value="libraries/bgrabitmap/bgragradientscanner.pas"/>
@@ -415,7 +413,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit44>
       <Unit45>
         <Filename Value="libraries/bgrabitmap/bgragraphics.pas"/>
@@ -424,7 +422,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit45>
       <Unit46>
         <Filename Value="libraries/bgrabitmap/bgragrayscalemask.pas"/>
@@ -433,7 +431,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit46>
       <Unit47>
         <Filename Value="libraries/bgrabitmap/bgragtkbitmap.pas"/>
@@ -442,7 +440,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit47>
       <Unit48>
         <Filename Value="libraries/bgrabitmap/bgraiconcursor.pas"/>
@@ -451,15 +449,16 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit48>
       <Unit49>
         <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="625"/>
-        <CursorPos X="25" Y="646"/>
-        <UsageCount Value="29"/>
+        <TopLine Value="420"/>
+        <CursorPos X="6" Y="436"/>
+        <FoldState Value=" T3iG0S2 pjGk90{M7"/>
+        <UsageCount Value="32"/>
         <Loaded Value="True"/>
       </Unit49>
       <Unit50>
@@ -469,7 +468,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit50>
       <Unit51>
         <Filename Value="libraries/bgrabitmap/bgralazresource.pas"/>
@@ -478,7 +477,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit51>
       <Unit52>
         <Filename Value="libraries/bgrabitmap/bgralclbitmap.pas"/>
@@ -487,7 +486,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit52>
       <Unit53>
         <Filename Value="libraries/bgrabitmap/bgralzpcommon.pas"/>
@@ -496,7 +495,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit53>
       <Unit54>
         <Filename Value="libraries/bgrabitmap/bgramacbitmap.pas"/>
@@ -505,7 +504,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit54>
       <Unit55>
         <Filename Value="libraries/bgrabitmap/bgramatrix3d.pas"/>
@@ -514,7 +513,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit55>
       <Unit56>
         <Filename Value="libraries/bgrabitmap/bgramultifiletype.pas"/>
@@ -523,7 +522,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit56>
       <Unit57>
         <Filename Value="libraries/bgrabitmap/bgranogui.inc"/>
@@ -532,7 +531,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit57>
       <Unit58>
         <Filename Value="libraries/bgrabitmap/bgranoguibitmap.pas"/>
@@ -541,7 +540,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit58>
       <Unit59>
         <Filename Value="libraries/bgrabitmap/bgraopengl.pas"/>
@@ -550,7 +549,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit59>
       <Unit60>
         <Filename Value="libraries/bgrabitmap/bgraopengl3d.pas"/>
@@ -559,7 +558,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit60>
       <Unit61>
         <Filename Value="libraries/bgrabitmap/bgraopengltype.pas"/>
@@ -568,7 +567,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit61>
       <Unit62>
         <Filename Value="libraries/bgrabitmap/bgraopenraster.pas"/>
@@ -577,7 +576,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit62>
       <Unit63>
         <Filename Value="libraries/bgrabitmap/bgrapaintnet.pas"/>
@@ -586,7 +585,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit63>
       <Unit64>
         <Filename Value="libraries/bgrabitmap/bgrapalette.pas"/>
@@ -595,7 +594,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit64>
       <Unit65>
         <Filename Value="libraries/bgrabitmap/bgrapath.pas"/>
@@ -604,7 +603,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit65>
       <Unit66>
         <Filename Value="libraries/bgrabitmap/bgrapen.pas"/>
@@ -613,7 +612,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit66>
       <Unit67>
         <Filename Value="libraries/bgrabitmap/bgraphongtypes.pas"/>
@@ -622,7 +621,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit67>
       <Unit68>
         <Filename Value="libraries/bgrabitmap/bgraphoxo.pas"/>
@@ -631,7 +630,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit68>
       <Unit69>
         <Filename Value="libraries/bgrabitmap/bgrapixel.inc"/>
@@ -640,7 +639,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit69>
       <Unit70>
         <Filename Value="libraries/bgrabitmap/bgrapolygon.pas"/>
@@ -649,7 +648,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit70>
       <Unit71>
         <Filename Value="libraries/bgrabitmap/bgrapolygonaliased.pas"/>
@@ -658,7 +657,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit71>
       <Unit72>
         <Filename Value="libraries/bgrabitmap/bgraqtbitmap.pas"/>
@@ -667,7 +666,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit72>
       <Unit73>
         <Filename Value="libraries/bgrabitmap/bgrareadbmp.pas"/>
@@ -676,7 +675,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit73>
       <Unit74>
         <Filename Value="libraries/bgrabitmap/bgrareadbmpmiomap.pas"/>
@@ -685,7 +684,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit74>
       <Unit75>
         <Filename Value="libraries/bgrabitmap/bgrareadgif.pas"/>
@@ -694,7 +693,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit75>
       <Unit76>
         <Filename Value="libraries/bgrabitmap/bgrareadico.pas"/>
@@ -703,7 +702,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit76>
       <Unit77>
         <Filename Value="libraries/bgrabitmap/bgrareadjpeg.pas"/>
@@ -712,7 +711,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit77>
       <Unit78>
         <Filename Value="libraries/bgrabitmap/bgrareadlzp.pas"/>
@@ -721,7 +720,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit78>
       <Unit79>
         <Filename Value="libraries/bgrabitmap/bgrareadpcx.pas"/>
@@ -730,7 +729,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit79>
       <Unit80>
         <Filename Value="libraries/bgrabitmap/bgrareadpng.pas"/>
@@ -739,7 +738,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit80>
       <Unit81>
         <Filename Value="libraries/bgrabitmap/bgrareadpsd.pas"/>
@@ -748,7 +747,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit81>
       <Unit82>
         <Filename Value="libraries/bgrabitmap/bgrareadtga.pas"/>
@@ -757,7 +756,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit82>
       <Unit83>
         <Filename Value="libraries/bgrabitmap/bgrareadxpm.pas"/>
@@ -766,7 +765,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit83>
       <Unit84>
         <Filename Value="libraries/bgrabitmap/bgrarenderer3d.pas"/>
@@ -775,7 +774,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit84>
       <Unit85>
         <Filename Value="libraries/bgrabitmap/bgraresample.pas"/>
@@ -784,7 +783,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit85>
       <Unit86>
         <Filename Value="libraries/bgrabitmap/bgrascene3d.pas"/>
@@ -793,7 +792,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit86>
       <Unit87>
         <Filename Value="libraries/bgrabitmap/bgrascenetypes.pas"/>
@@ -802,7 +801,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit87>
       <Unit88>
         <Filename Value="libraries/bgrabitmap/bgraslicescaling.pas"/>
@@ -811,7 +810,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit88>
       <Unit89>
         <Filename Value="libraries/bgrabitmap/bgraspritegl.pas"/>
@@ -820,7 +819,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit89>
       <Unit90>
         <Filename Value="libraries/bgrabitmap/bgrasse.inc"/>
@@ -829,7 +828,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit90>
       <Unit91>
         <Filename Value="libraries/bgrabitmap/bgrasse.pas"/>
@@ -838,7 +837,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit91>
       <Unit92>
         <Filename Value="libraries/bgrabitmap/bgrastreamlayers.pas"/>
@@ -847,7 +846,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit92>
       <Unit93>
         <Filename Value="libraries/bgrabitmap/bgrasvg.pas"/>
@@ -856,7 +855,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit93>
       <Unit94>
         <Filename Value="libraries/bgrabitmap/bgrasvgshapes.pas"/>
@@ -865,7 +864,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit94>
       <Unit95>
         <Filename Value="libraries/bgrabitmap/bgrasvgtype.pas"/>
@@ -874,7 +873,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit95>
       <Unit96>
         <Filename Value="libraries/bgrabitmap/bgratext.pas"/>
@@ -883,7 +882,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit96>
       <Unit97>
         <Filename Value="libraries/bgrabitmap/bgratextfx.pas"/>
@@ -892,7 +891,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit97>
       <Unit98>
         <Filename Value="libraries/bgrabitmap/bgrathumbnail.pas"/>
@@ -901,7 +900,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit98>
       <Unit99>
         <Filename Value="libraries/bgrabitmap/bgratransform.pas"/>
@@ -910,7 +909,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit99>
       <Unit100>
         <Filename Value="libraries/bgrabitmap/bgratypewriter.pas"/>
@@ -919,7 +918,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit100>
       <Unit101>
         <Filename Value="libraries/bgrabitmap/bgraunits.pas"/>
@@ -928,7 +927,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit101>
       <Unit102>
         <Filename Value="libraries/bgrabitmap/bgrautf8.pas"/>
@@ -937,7 +936,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit102>
       <Unit103>
         <Filename Value="libraries/bgrabitmap/bgravectorize.pas"/>
@@ -946,7 +945,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit103>
       <Unit104>
         <Filename Value="libraries/bgrabitmap/bgrawinbitmap.pas"/>
@@ -955,7 +954,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit104>
       <Unit105>
         <Filename Value="libraries/bgrabitmap/bgrawinresource.pas"/>
@@ -964,7 +963,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit105>
       <Unit106>
         <Filename Value="libraries/bgrabitmap/bgrawritebmpmiomap.pas"/>
@@ -973,7 +972,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit106>
       <Unit107>
         <Filename Value="libraries/bgrabitmap/bgrawritelzp.pas"/>
@@ -982,7 +981,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit107>
       <Unit108>
         <Filename Value="libraries/bgrabitmap/bgrawritepng.pas"/>
@@ -991,7 +990,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit108>
       <Unit109>
         <Filename Value="libraries/bgrabitmap/blendpixelinline.inc"/>
@@ -1000,7 +999,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit109>
       <Unit110>
         <Filename Value="libraries/bgrabitmap/blendpixels.inc"/>
@@ -1009,7 +1008,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit110>
       <Unit111>
         <Filename Value="libraries/bgrabitmap/blendpixelsover.inc"/>
@@ -1018,7 +1017,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit111>
       <Unit112>
         <Filename Value="libraries/bgrabitmap/blurbox.inc"/>
@@ -1027,7 +1026,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit112>
       <Unit113>
         <Filename Value="libraries/bgrabitmap/blurfast.inc"/>
@@ -1036,7 +1035,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit113>
       <Unit114>
         <Filename Value="libraries/bgrabitmap/blurnormal.inc"/>
@@ -1045,7 +1044,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit114>
       <Unit115>
         <Filename Value="libraries/bgrabitmap/COPYING.LGPL.txt"/>
@@ -1054,7 +1053,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit115>
       <Unit116>
@@ -1064,7 +1063,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit116>
       <Unit117>
@@ -1074,7 +1073,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit117>
       <Unit118>
         <Filename Value="libraries/bgrabitmap/density256.inc"/>
@@ -1083,7 +1082,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit118>
       <Unit119>
         <Filename Value="libraries/bgrabitmap/face3d.inc"/>
@@ -1092,7 +1091,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit119>
       <Unit120>
         <Filename Value="libraries/bgrabitmap/geometrytypes.inc"/>
@@ -1101,7 +1100,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit120>
       <Unit121>
         <Filename Value="libraries/bgrabitmap/lightingclasses3d.inc"/>
@@ -1110,7 +1109,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit121>
       <Unit122>
         <Filename Value="libraries/bgrabitmap/lineartexscan.inc"/>
@@ -1119,7 +1118,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit122>
       <Unit123>
         <Filename Value="libraries/bgrabitmap/lineartexscan2.inc"/>
@@ -1128,7 +1127,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit123>
       <Unit124>
         <Filename Value="libraries/bgrabitmap/multishapeline.inc"/>
@@ -1137,7 +1136,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit124>
       <Unit125>
         <Filename Value="libraries/bgrabitmap/object3d.inc"/>
@@ -1146,7 +1145,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit125>
       <Unit126>
         <Filename Value="libraries/bgrabitmap/paletteformats.inc"/>
@@ -1155,7 +1154,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit126>
       <Unit127>
         <Filename Value="libraries/bgrabitmap/part3d.inc"/>
@@ -1164,7 +1163,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit127>
       <Unit128>
         <Filename Value="libraries/bgrabitmap/perspectivecolorscan.inc"/>
@@ -1173,7 +1172,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit128>
       <Unit129>
         <Filename Value="libraries/bgrabitmap/perspectivescan.inc"/>
@@ -1182,7 +1181,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit129>
       <Unit130>
         <Filename Value="libraries/bgrabitmap/perspectivescan2.inc"/>
@@ -1191,7 +1190,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit130>
       <Unit131>
         <Filename Value="libraries/bgrabitmap/phongdraw.inc"/>
@@ -1200,7 +1199,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit131>
       <Unit132>
         <Filename Value="libraries/bgrabitmap/phongdrawsse.inc"/>
@@ -1209,7 +1208,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit132>
       <Unit133>
         <Filename Value="libraries/bgrabitmap/phonglight.inc"/>
@@ -1218,7 +1217,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit133>
       <Unit134>
         <Filename Value="libraries/bgrabitmap/phonglightsse.inc"/>
@@ -1227,7 +1226,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit134>
       <Unit135>
         <Filename Value="libraries/bgrabitmap/polyaliaspersp.inc"/>
@@ -1236,7 +1235,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit135>
       <Unit136>
         <Filename Value="libraries/bgrabitmap/readme.txt"/>
@@ -1245,7 +1244,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit136>
       <Unit137>
@@ -1255,7 +1254,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit137>
       <Unit138>
         <Filename Value="libraries/bgrabitmap/unzipperext.pas"/>
@@ -1264,7 +1263,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit138>
       <Unit139>
         <Filename Value="libraries/bgrabitmap/uunittest.pas"/>
@@ -1273,7 +1272,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit139>
       <Unit140>
         <Filename Value="libraries/bgrabitmap/vertex3d.inc"/>
@@ -1282,16 +1281,17 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="29"/>
+        <UsageCount Value="32"/>
       </Unit140>
       <Unit141>
         <Filename Value="myunit.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="MyUnit"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="46"/>
-        <CursorPos X="34" Y="74"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="62"/>
+        <CursorPos X="67" Y="78"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit141>
       <Unit142>
@@ -1323,112 +1323,68 @@
         <UsageCount Value="10"/>
       </Unit145>
     </Units>
-    <JumpHistory Count="24" HistoryIndex="23">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
         <Filename Value="unit1.pas"/>
-        <Caret Line="183" Column="5" TopLine="162"/>
+        <Caret Line="11" Column="6"/>
       </Position1>
       <Position2>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="160" TopLine="152"/>
+        <Filename Value="myunit.pas"/>
+        <Caret Line="8" Column="55"/>
       </Position2>
       <Position3>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="151" Column="12" TopLine="142"/>
+        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
+        <Caret Line="737" Column="9" TopLine="716"/>
       </Position3>
       <Position4>
         <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="310" TopLine="295"/>
+        <Caret Line="517" Column="9" TopLine="500"/>
       </Position4>
       <Position5>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="160" TopLine="142"/>
+        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
+        <Caret Line="627" Column="9" TopLine="613"/>
       </Position5>
       <Position6>
         <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="310" TopLine="295"/>
+        <Caret Line="36" Column="28" TopLine="24"/>
       </Position6>
       <Position7>
         <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="314" TopLine="295"/>
+        <Caret Line="39" Column="37" TopLine="22"/>
       </Position7>
       <Position8>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="200" Column="8" TopLine="175"/>
+        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
+        <Caret Line="43" Column="37" TopLine="28"/>
       </Position8>
       <Position9>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="149" TopLine="142"/>
+        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
+        <Caret Line="37" Column="25" TopLine="30"/>
       </Position9>
       <Position10>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="170" Column="42" TopLine="154"/>
+        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
+        <Caret Line="410" Column="17" TopLine="404"/>
       </Position10>
       <Position11>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="35" Column="90" TopLine="18"/>
+        <Filename Value="myunit.pas"/>
+        <Caret Line="66" Column="59" TopLine="50"/>
       </Position11>
       <Position12>
         <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="30" Column="26" TopLine="13"/>
+        <Caret Line="37" Column="31" TopLine="28"/>
       </Position12>
       <Position13>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="37" Column="103" TopLine="20"/>
+        <Filename Value="myunit.pas"/>
+        <Caret Line="68" Column="60" TopLine="59"/>
       </Position13>
-      <Position14>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="408" Column="98" TopLine="391"/>
-      </Position14>
-      <Position15>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="422" Column="39" TopLine="405"/>
-      </Position15>
-      <Position16>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="423" Column="26" TopLine="406"/>
-      </Position16>
-      <Position17>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="425" Column="25" TopLine="408"/>
-      </Position17>
-      <Position18>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="427" Column="25" TopLine="411"/>
-      </Position18>
-      <Position19>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="438" Column="24" TopLine="421"/>
-      </Position19>
-      <Position20>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="443" Column="21" TopLine="426"/>
-      </Position20>
-      <Position21>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="462" Column="36" TopLine="445"/>
-      </Position21>
-      <Position22>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="514" Column="10" TopLine="497"/>
-      </Position22>
-      <Position23>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="150" Column="13" TopLine="140"/>
-      </Position23>
-      <Position24>
-        <Filename Value="libraries/bgrabitmap/bgraimageprocess.pas"/>
-        <Caret Line="463" Column="28" TopLine="440"/>
-      </Position24>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
     <Watches Count="2">
       <Item1>
-        <Expression Value="customWidth"/>
+        <Expression Value="startP"/>
       </Item1>
       <Item2>
-        <Expression Value="Output.Width"/>
+        <Expression Value="endP"/>
       </Item2>
     </Watches>
   </Debugging>
